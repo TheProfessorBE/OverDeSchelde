@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register('sw.js')
+        }
+    </script>
+        <link rel="manifest" href="/site.webmanifest">   
+            <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWVPBP6PBJ"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HWVPBP6PBJ');
+        </script>
+    <title>Vertrekuren Veer Bazel/Kruibeke/Hemiksem/Hoboken</title>
+    <link rel="stylesheet" href="stylesheet.css?rnd=23">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2694707267972749" crossorigin="anonymous"></script>
+    <script src="generateFerryTables.js?rnd=23"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main-div">
+        <div id="navbar">
+            <a href="index.php">Volgende afvaarten</a>
+            <a href="timetableWeek.php">Uurtabel Week</a>
+            <a href="timetableWeekend.php">Uurtabel Weekend</a>
+            <a href="widgetAndroid.php">Installatie Smartphone</a>
+        </div>
+
+        <center><h1 class="title">Volgende Afvaarten:</h1></center>
+        <hr>
+        <table class="timecard">
+            <tr>
+            <td id="next-departures-bazel"> </td>
+            <td id="next-departures-hemiksem"> </td>
+            <td id="next-departures-kruibeke"> </td>
+            <td id="next-departures-hoboken"> </td>
+            </tr>
+        </table>
+    
+        <script>
+            var currentTime = new Date().toLocaleTimeString('nl-BE', {hour: '2-digit', minute:'2-digit'});
+            var weekday = new Date().getDay(); // 0 = Sunday, 1 = Monday, etc.
+            var nextDeparturesBazel = getNextDepartures(weekday, departuresBazelWeek, departuresBazelWeekend, 5);
+            var nextDeparturesHemiksem = getNextDepartures(weekday, departuresHemiksemWeek, departuresHemiksemWeekend, 5);
+            var nextDeparturesKruibeke = getNextDepartures(weekday, departuresKruibekeWeek, departuresKruibekeWeekend, 5);
+            var nextDeparturesHoboken = getNextDepartures(weekday, departuresHobokenWeek, departuresHobokenWeekend, 5);
+
+            let tableHtmlBazel = '<table class="timerow"><tr><th>Bazel</th></tr>';
+            for (let i = 0; i < nextDeparturesBazel.length; i++) {
+            tableHtmlBazel += '<tr><td>' + nextDeparturesBazel[i] + '</td></tr>';
+            }
+            tableHtmlBazel += '</table>';
+            document.getElementById('next-departures-bazel').innerHTML = tableHtmlBazel;
+
+            let tableHtmlHemiksem = '<table class="timerow"><tr><th>Hemiksem</th></tr>';
+            for (let i = 0; i < nextDeparturesHemiksem.length; i++) {
+            tableHtmlHemiksem += '<tr><td>' + nextDeparturesHemiksem[i] + '</td></tr>';
+            }
+            tableHtmlHemiksem += '</table>';
+            document.getElementById('next-departures-hemiksem').innerHTML = tableHtmlHemiksem;        
+
+            let tableHtmlKruibeke = '<table class="timerow"><tr><th>Kruibeke</th></tr>';
+            for (let i = 0; i < nextDeparturesKruibeke.length; i++) {
+            tableHtmlKruibeke += '<tr><td>' + nextDeparturesKruibeke[i] + '</td></tr>';
+            }
+            tableHtmlKruibeke += '</table>';
+            document.getElementById('next-departures-kruibeke').innerHTML = tableHtmlKruibeke; 
+
+            let tableHtmlHoboken = '<table class="timerow"><tr><th>Hoboken</th></tr>';
+            for (let i = 0; i < nextDeparturesHoboken.length; i++) {
+            tableHtmlHoboken += '<tr><td>' + nextDeparturesHoboken[i] + '</td></tr>';
+            }
+            tableHtmlHoboken += '</table>';
+            document.getElementById('next-departures-hoboken').innerHTML = tableHtmlHoboken;  
+        </script>
+
+        <p class="info-header">Meer informatie over het veer is te vinden op de website van het Agentschap voor Maritieme Dienstverlening en Kust:</p>
+        <div id="linkbar">    
+            <a href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-kruibeke-hoboken" target="new">AMDK - Hoboken/Kruibeke</a>
+            <a href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-kruibeke-hoboken" target="new">AMDK - Hemiksem/Bazel</a>
+        </div>
+
+
+        <center><script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'B0B2KDGXB');kofiwidget2.draw();</script> </center>
+
+        
+ 
+
+        <p class="disclaimer">
+        Disclaimer: The information provided on this website is for general informational purposes only. While we strive to 
+        ensure that the information is up-to-date and accurate, we make no representations or warranties of any kind, express or 
+        implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information.
+        Any reliance you place on such information is therefore strictly at your own risk. We will not be liable for any loss or damage arising 
+        from the use of this website or the information provided."
+        
+        </p>
+    </div>
+
+
+  </body>
+</html>
