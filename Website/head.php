@@ -22,7 +22,7 @@
         gtag('js', new Date());
         gtag('config', 'G-HWVPBP6PBJ');
         </script>
-    <title>Vertrekuren Veer Bazel/Kruibeke/Hemiksem/Hoboken</title>
+    <title>Over de Schelde: de vertrektijden van de veerboten over de Schelde.</title>
         
     <link rel="stylesheet" href="stylesheet.css?rnd=32012111">
     <script src="generateFerryTables.js?rnd=2111123"></script>
