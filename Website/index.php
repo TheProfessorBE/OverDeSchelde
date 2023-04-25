@@ -17,7 +17,7 @@
                     <div class="flex flex-col text-center" id="next-departures-antwerpen"></div>
                 </div>
                 <div class=" py-2"></div>
-                <div class="text-center text-sm font-semibold text-ODS-800" id="lastUpdateText"></div>
+                <div class="text-center text-sm font-semibold text-ODS-600" id="lastUpdateText"></div>
                 <?php include 'ferrystatus.php';?> 
                 <?php include 'footer.php';?> 
 
