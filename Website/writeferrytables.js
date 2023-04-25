@@ -67,8 +67,12 @@ function writeFerryTables(modeOfWriting) {
       currentTable +=
       '<li class="' + colorString + ' py-1 text-ODS-600 text-lg rounded align-middle">' +
       "<span>" + departures[i] + "</span>";
+      var colorStringMinutes = 'text-green-900';
+      if(differenceInMinutes < 5){
+        colorStringMinutes= 'text-red-800';
+      }
       if(showMinutes){      
-        currentTable += " <span class='text-xs text-green-900 font-bold align-middle'>(+" + differenceInMinutes + "min)</span>";
+        currentTable += " <span class='text-xs " + colorStringMinutes + " font-bold align-middle'>(+" + differenceInMinutes + "min)</span>";
       }
       currentTable +="</li>";
     }
