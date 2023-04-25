@@ -59,12 +59,11 @@ function writeFerryTables(modeOfWriting) {
       } else {
         colorString = 'bg-ODS-300';
       }
-
-      if( i < 2 ){
-        var showMinutes = true;
-      }else{
-        var showMinutes = false;
+      var showMinutes = false;
+      if( (i < 8) && modeOfWriting == 0){
+        showMinutes = true;
       }
+
       currentTable +=
       '<li class="' + colorString + ' py-1 text-ODS-600 text-lg rounded align-middle">' +
       "<span>" + departures[i] + "</span>";
