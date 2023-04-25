@@ -1,13 +1,13 @@
 <div class=" py-4"></div>
 
 
-<div class="text-ODS-600 gap-0.5 font-semibold">
+<div class="text-ODS-600 gap-0.5 font-bold">
     <p>Meer informatie over het veer is te vinden op de website van het Agentschap voor Maritieme Dienstverlening en Kust:</p>
     <div class=" py-2"></div>
     <div class="text-ODS-600 grid grid-cols-1 lg:grid-cols-3 gap-0.5 ">    
-        <a class="hover:text-ODS-800 hover:bg-ODS-400 px-2 py-3 rounded-lg" href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-bazel-hemiksem" target="new">AMDK - Hemiksem/Bazel</a>
-        <a class="hover:text-ODS-800 hover:bg-ODS-400 px-2 py-3 rounded-lg " href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-kruibeke-hoboken" target="new">AMDK - Hoboken/Kruibeke</a>
-        <a class="hover:text-ODS-800 hover:bg-ODS-400 px-2 py-3 rounded-lg" href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-sint-anna" target="new">AMDK - Sint-Anna/Antwerpen</a>
+        <a class=" font-semibold hover:text-ODS-800 hover:bg-ODS-400 px-2 py-3 rounded-lg" href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-bazel-hemiksem" target="new">AMDK - Hemiksem/Bazel</a>
+        <a class=" font-semibold hover:text-ODS-800 hover:bg-ODS-400 px-2 py-3 rounded-lg " href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-kruibeke-hoboken" target="new">AMDK - Hoboken/Kruibeke</a>
+        <a class="font-semibold hover:text-ODS-800 hover:bg-ODS-400 px-2 py-3 rounded-lg" href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-sint-anna" target="new">AMDK - Sint-Anna/Antwerpen</a>
     </div>
 </div>
 
