@@ -110,7 +110,11 @@ function writeFerryTables(modeOfWriting) {
   document.getElementById("next-departures-lo").innerHTML = tableHtmlLo;
   document.getElementById("next-departures-antwerpen").innerHTML = tableHtmlAntwerpen;
 
+
   var rightNow = new Date()
-  var stringTimeUpdated = "Laatst geupdated om "+ rightNow.toLocaleTimeString();
+
+  var hours = rightNow.getHours().toString().padStart(2, '0');
+  var minutes = rightNow.getMinutes().toString().padStart(2, '0');
+  var stringTimeUpdated = "Laatst geupdated om " + hours + ":" + minutes;
   document.getElementById("lastUpdateText").innerHTML = stringTimeUpdated
 }
