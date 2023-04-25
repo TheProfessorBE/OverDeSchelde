@@ -69,10 +69,18 @@ function writeFerryTables(modeOfWriting) {
       "<span>" + departures[i] + "</span>";
       var colorStringMinutes = 'text-green-900';
       if(differenceInMinutes < 5){
-        colorStringMinutes= 'text-red-800';
+        colorStringMinutes= 'text-green-900';
       }
       if(showMinutes){      
-        currentTable += " <span class='text-xs " + colorStringMinutes + " font-bold align-middle'>(+" + differenceInMinutes + "min)</span>";
+      var differenceTimeString;        
+      if (differenceInMinutes >= 60) {
+        const hours = Math.floor(differenceInMinutes / 60);
+        const minutes = differenceInMinutes % 60;
+        differentTimeString = `${hours}h${minutes.toString().padStart(2, '0')}m`;
+      } else {
+        differentTimeString = `${differenceInMinutes}m`;
+      }
+        currentTable += " <span class='text-xs " + colorStringMinutes + " font-bold align-middle'>(+" + differentTimeString + ")</span>";
       }
       currentTable +="</li>";
     }
