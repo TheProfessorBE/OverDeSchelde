@@ -16,6 +16,8 @@
                     <div class="flex flex-col text-center" id="next-departures-lo"></div>
                     <div class="flex flex-col text-center" id="next-departures-antwerpen"></div>
                 </div>
+                <div class=" py-2"></div>
+                <div class="text-center text-sm font-semibold text-ODS-800" id="lastUpdateText"></div>
                 <?php include 'ferrystatus.php';?> 
                 <?php include 'footer.php';?> 
 
@@ -26,6 +28,6 @@
 
   <script>
     writeFerryTables(0);
-    setInterval(function() {writeFerryTables(0); }, 300000 ) 
+    setInterval(function() {writeFerryTables(0); }, 60000 ) 
   </script>
 </html>

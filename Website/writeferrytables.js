@@ -42,7 +42,7 @@ function writeFerryTables(modeOfWriting) {
   );
 
   function writeTable(nameDeparture, departures) {
-    var currentTimeLocal = new Date()
+    var currentTimeLocal = new Date();
     let currentTable = '<div class="flex flex-col text-center ">';
     currentTable +=
       '<h2 class="bg-ODS-400 py-2 text-lg text-white font-bold rounded">' +
@@ -53,17 +53,25 @@ function writeFerryTables(modeOfWriting) {
       var curDepartureTime = new Date();
       curDepartureTime.setHours(hours, minutes, 0, 0);
       differenceInMinutes = Math.round( ( curDepartureTime - currentTimeLocal ) / 1000 / 60 );
+      var colorString;
       if (i % 2 == 0) {
-        currentTable +=
-          '<li class="bg-ODS-100 py-1 text-ODS-600 text-lg rounded">' +
-          departures[i] + " <span class='text-xs text-green-900 font-bold'>(+" + differenceInMinutes + "min)</span>" +
-          "</li>";
+        colorString = 'bg-ODS-100';
       } else {
-        currentTable +=
-          '<li class="bg-ODS-300 py-1 text-ODS-600 text-lg rounded">' +
-          departures[i] + " <span class='text-xs text-green-900 font-bold'>(+" + differenceInMinutes + "min)</span>" +
-          "</li>";
+        colorString = 'bg-ODS-300';
       }
+
+      if( i < 2 ){
+        var showMinutes = true;
+      }else{
+        var showMinutes = false;
+      }
+      currentTable +=
+      '<li class="' + colorString + ' py-1 text-ODS-600 text-lg rounded align-middle">' +
+      "<span>" + departures[i] + "</span>";
+      if(showMinutes){      
+        currentTable += " <span class='text-xs text-green-900 font-bold align-middle'>(+" + differenceInMinutes + "min)</span>";
+      }
+      currentTable +="</li>";
     }
     currentTable += "</ul></div>";
     return currentTable;
@@ -98,4 +106,8 @@ function writeFerryTables(modeOfWriting) {
   document.getElementById("next-departures-hoboken").innerHTML = tableHtmlHoboken;
   document.getElementById("next-departures-lo").innerHTML = tableHtmlLo;
   document.getElementById("next-departures-antwerpen").innerHTML = tableHtmlAntwerpen;
+
+  var rightNow = new Date()
+  var stringTimeUpdated = "Laatst geupdated om "+ rightNow.toLocaleTimeString();
+  document.getElementById("lastUpdateText").innerHTML = stringTimeUpdated
 }

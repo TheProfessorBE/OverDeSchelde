@@ -24,10 +24,10 @@
         </script>
     <title>Over de Schelde: de vertrektijden van de veerboten over de Schelde.</title>
         
-    <link rel="stylesheet" href="stylesheet.css?rnd=32012111">
-    <script src="generateFerryTables.js?rnd=2111123"></script>
-    <script src='writeferrytables.js?rnd=21211213'></script>
+    <link rel="stylesheet" href="stylesheet.css?rnd=3.1415">
+    <script src="generateFerryTables.js?rnd=3.1415"></script>
+    <script src='writeferrytables.js?rnd=3.1415'></script>
 
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2694707267972749" crossorigin="anonymous"></script>
+    <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2694707267972749" crossorigin="anonymous"></script>-->
   </head>
