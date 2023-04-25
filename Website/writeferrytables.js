@@ -65,7 +65,7 @@ function writeFerryTables(modeOfWriting) {
       }
 
       currentTable +=
-      '<li class="' + colorString + ' py-1 text-ODS-600 text-lg rounded align-middle">' +
+      '<li class="' + colorString + ' py-1 text-ODS-600 text-lg rounded align-middle flex items-center justify-center">' +
       "<span>" + departures[i] + "</span>";
       var colorStringMinutes = 'text-green-900';
       if(differenceInMinutes < 5){
@@ -80,7 +80,7 @@ function writeFerryTables(modeOfWriting) {
       } else {
         differentTimeString = `${differenceInMinutes}m`;
       }
-        currentTable += " <span class='text-xs " + colorStringMinutes + " font-bold align-middle'>(" + differentTimeString + ")</span>";
+        currentTable += " <span class=' px-1 text-xs " + colorStringMinutes + " font-bold align-middle'>(" + differentTimeString + ")</span>";
       }
       currentTable +="</li>";
     }
