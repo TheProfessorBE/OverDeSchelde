@@ -80,7 +80,7 @@ function writeFerryTables(modeOfWriting) {
       } else {
         differentTimeString = `${differenceInMinutes}m`;
       }
-        currentTable += " <span class='text-xs " + colorStringMinutes + " font-bold align-middle'>(+" + differentTimeString + ")</span>";
+        currentTable += " <span class='text-xs " + colorStringMinutes + " font-bold align-middle'>(" + differentTimeString + ")</span>";
       }
       currentTable +="</li>";
     }
@@ -123,6 +123,6 @@ function writeFerryTables(modeOfWriting) {
 
   var hours = rightNow.getHours().toString().padStart(2, '0');
   var minutes = rightNow.getMinutes().toString().padStart(2, '0');
-  var stringTimeUpdated = "Laatst geupdated om " + hours + ":" + minutes;
+  var stringTimeUpdated = "Laatst geüpdated om " + hours + ":" + minutes;
   document.getElementById("lastUpdateText").innerHTML = stringTimeUpdated
 }
