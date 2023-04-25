@@ -14,8 +14,8 @@
                     <h2 class="my-6 text-left text-2xl font-semibold text-ODS-800">Waarom deze website?</h2>
                     <p class="text-justify"> Deze website is gebouwd door een gebruiker van het veer, om op een overzichtelijke manier de uren van de verschillende veerboten over de Schelde te kunnen raadplegen.
                             Uit een eerste versie voor eigen gebruik is dan overdeschelde.be gegroeid, om het voor het bredere publiek bruikbaar te maken. Deze website is volledig een hobby project
-                            waarmee geen geld verdiend wordt. Donaties om de website operationeel te houden worden geapprecieerd  maar zijn zeker niet noodzakelijk. We doen ons best om de informatie zo 
-                            correct mogelijk te houden, maar garantie kan hierop niet gegeven worden.
+                            waarmee geen geld verdiend wordt. Donaties om de website operationeel te houden worden geäpprecieerd, en dienen om de lopende kosten te dekken. Donaties kunnen via het Ko-Fi platform op <a class="text-ODS-900 font-bold" target="_blank" href="https://ko-fi.com/theprofessorbe">https://ko-fi.com/theprofessorbe</a>. 
+                            We doen ons best om de informatie zo correct mogelijk te houden, maar garantie kan hierop niet gegeven worden. Bij twijfel kan je best steeds de websites van de vloot nakijken.
                     </p>
                 </div>
                 
