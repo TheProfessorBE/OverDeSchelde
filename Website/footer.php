@@ -21,7 +21,7 @@
 
 <div class="text-s text-ODS-400 flex items-center justify-center space-x-6">
     <div class=" py-4"></div>
-    <p class="mr-2">Designed by TheProfessorBE for fun and utility.<br/>
+    <p class="mr-2">Designed by <a href="https://github.com/TheProfessorBE" target="_blank" class="text-ODS-400 font-bold">TheProfessorBE</a> for fun and utility.<br/>
     No ads, but if you like it, support to keep the website operational is greatly appreciated! </p>
     <!--<img class="rounded-full w-14 h-auto shadow-lg" src="images/cartoon_small.jpg"></img>-->
 </div>    

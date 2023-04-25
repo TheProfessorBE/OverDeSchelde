@@ -42,21 +42,26 @@ function writeFerryTables(modeOfWriting) {
   );
 
   function writeTable(nameDeparture, departures) {
+    var currentTimeLocal = new Date()
     let currentTable = '<div class="flex flex-col text-center ">';
     currentTable +=
       '<h2 class="bg-ODS-400 py-2 text-lg text-white font-bold rounded">' +
       nameDeparture +
       "</h2><ul>";
     for (let i = 0; i < departures.length; i++) {
+      [hours, minutes] = departures[i].split(":");
+      var curDepartureTime = new Date();
+      curDepartureTime.setHours(hours, minutes, 0, 0);
+      differenceInMinutes = Math.round( ( curDepartureTime - currentTimeLocal ) / 1000 / 60 );
       if (i % 2 == 0) {
         currentTable +=
           '<li class="bg-ODS-100 py-1 text-ODS-600 text-lg rounded">' +
-          departures[i] +
+          departures[i] + " <span class='text-xs text-green-900 font-bold'>(+" + differenceInMinutes + "min)</span>" +
           "</li>";
       } else {
         currentTable +=
           '<li class="bg-ODS-300 py-1 text-ODS-600 text-lg rounded">' +
-          departures[i] +
+          departures[i] + " <span class='text-xs text-green-900 font-bold'>(+" + differenceInMinutes + "min)</span>" +
           "</li>";
       }
     }
