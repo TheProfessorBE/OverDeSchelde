@@ -78,9 +78,9 @@ function writeFerryTables(modeOfWriting) {
         const minutes = differenceInMinutes % 60;
         differentTimeString = `${hours}h${minutes.toString().padStart(2, '0')}m`;
       } else {
-        differentTimeString = `${differenceInMinutes}m`;
+        differentTimeString = `${differenceInMinutes}min`;
       }
-        currentTable += " <span class=' px-1 text-xs " + colorStringMinutes + " font-bold align-middle'>(" + differentTimeString + ")</span>";
+        currentTable += " <span class=' px-2 text-xs " + colorStringMinutes + " font-bold align-middle'>(" + differentTimeString + ")</span>";
       }
       currentTable +="</li>";
     }
