@@ -26,7 +26,7 @@
                 <a class=" font-semibold hover:text-ODS-800 hover:bg-ODS2-300 px-2 py-3 rounded-lg " href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-kruibeke-hoboken" target="new">AMDK - Hoboken/Kruibeke</a>
                 <a class="font-semibold hover:text-ODS-800 hover:bg-ODS-300 px-2 py-3 rounded-lg" href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-sint-anna" target="new">AMDK - Sint-Anna/Antwerpen</a>
             </div>
-            <div class="text-left text-xs font-bold text-ODS-600" id="lastUpdateText"></div>
+            <div class="text-left text-xs font-bold text-red-900" id="lastUpdateText"></div>
         </div>
     </div>
 </div>
