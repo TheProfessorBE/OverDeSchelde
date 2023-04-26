@@ -45,7 +45,7 @@ function writeFerryTables(modeOfWriting) {
     var currentTimeLocal = new Date();
     let currentTable = '<div class="flex flex-col text-center ">';
     currentTable +=
-      '<h2 class=" ' + colorStringTitle + ' py-2 text-lg text-white font-bold rounded">' +
+      '<h2 class=" ' + colorStringTitle + ' py-2 text-lg text-white font-bold rounded-lg">' +
       nameDeparture +
       "</h2><ul>";
     for (let i = 0; i < departures.length; i++) {
@@ -65,7 +65,7 @@ function writeFerryTables(modeOfWriting) {
       }
 
       currentTable +=
-      '<li class="' + colorString + ' py-1 text-ODS-600 text-lg rounded align-middle flex items-center justify-center ">' +
+      '<li class="' + colorString + ' py-1 text-ODS-600 text-lg rounded-lg align-middle flex items-center justify-center ">' +
       "<span class='font-semibold'>" + departures[i] + "</span>";
       var colorStringMinutes = 'text-green-900';
       if(differenceInMinutes < 5){

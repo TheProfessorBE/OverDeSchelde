@@ -8,7 +8,7 @@
             <div class="flex flex-col text-white ">
                 <?php include 'navbar.php';?>
 
-                <h1 class="my-2 text-center text-4xl font-semibold text-ODS-800 bg-ODS-100 rounded-lg p-2">Over de Schelde?</h1>
+                <h1 class="my-2 text-center text-3xl font-semibold text-ODS-800 bg-ODS-100 rounded-lg p-2">Over de Schelde?</h1>
                 
                 <div class="grid text-ODS-900 text-lg bg-ODS-100 rounded-lg p-2">
                     <h2 class="m2-6 text-left text-2xl font-semibold text-ODS-800 mx-2">Waarom deze website?</h2>

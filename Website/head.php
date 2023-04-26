@@ -24,9 +24,9 @@
         </script>
     <title>Over de Schelde: de vertrektijden van de veerboten over de Schelde.</title>
         
-    <link rel="stylesheet" href="stylesheet.css?rnd=3.14152">
-    <script src="generateFerryTables.js?rnd=3.14152"></script>
-    <script src='writeferrytables.js?rnd=3.14152'></script>
+    <link rel="stylesheet" href="stylesheet.css?rnd=3.141527">
+    <script src="generateFerryTables.js?rnd=3.141527"></script>
+    <script src='writeferrytables.js?rnd=3.141527'></script>
 
 
     <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2694707267972749" crossorigin="anonymous"></script>-->
