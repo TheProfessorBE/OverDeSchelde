@@ -8,7 +8,7 @@
             <div class="justify-center 	text-white ">
                 <?php include 'navbar.php';?>
 
-                <h1 class="my-3 text-center text-4xl font-semibold text-ODS-800 bg-ODS-100 rounded-lg p-2">Afvaarten Weekend:</h1>
+                <h1 class="my-2 text-center text-4xl font-semibold text-ODS-800 bg-ODS-100 rounded-lg p-1">Afvaarten Weekend:</h1>
                 <div class="grid grid-cols-2 lg:grid-cols-6 gap-1 bg-ODS-100 p-3 rounded-lg">
                     <div class="flex flex-col text-center" id="next-departures-bazel"></div>
                     <div class="flex flex-col text-center" id="next-departures-hemiksem"></div>
