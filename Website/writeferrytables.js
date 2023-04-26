@@ -66,7 +66,7 @@ function writeFerryTables(modeOfWriting) {
 
       currentTable +=
       '<li class="' + colorString + ' py-1 text-ODS-600 text-lg rounded align-middle flex items-center justify-center ">' +
-      "<span>" + departures[i] + "</span>";
+      "<span class='font-semibold'>" + departures[i] + "</span>";
       var colorStringMinutes = 'text-green-900';
       if(differenceInMinutes < 5){
         colorStringMinutes= 'text-green-900';
