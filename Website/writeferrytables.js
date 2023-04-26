@@ -135,6 +135,6 @@ function writeFerryTables(modeOfWriting) {
 
   var hours = rightNow.getHours().toString().padStart(2, '0');
   var minutes = rightNow.getMinutes().toString().padStart(2, '0');
-  var stringTimeUpdated = "Laatst geüpdated om " + hours + ":" + minutes;
+  var stringTimeUpdated = "Laatste update: " + hours + ":" + minutes + ". Info onder voorbehoud van onvoorziene omstandigheden.";
   document.getElementById("lastUpdateText").innerHTML = stringTimeUpdated
 }

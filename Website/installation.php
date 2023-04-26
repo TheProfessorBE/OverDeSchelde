@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <?php include 'head.php';?>
-    <body class="bg-gray-100">
+    <body class="bg-gray-100 overflow-scroll">
     <center>        
     <div class=" py-2"></div>
         <div class="font-sans bg-white shadow-lg p-4 max-w-5xl px-5 py-5 rounded-md">
@@ -18,18 +18,18 @@
                             We doen ons best om de informatie zo correct mogelijk te houden, maar garantie kan hierop niet gegeven worden. Bij twijfel kan je best steeds de websites van de vloot nakijken.
                     </p>
                 </div>
-                
-                <div class="my-2 bg-ODS-100 rounded-lg p-2">
+                <div class="py-1"></div>
+                <div class=" bg-ODS-100 rounded-lg p-2">
                     <h2 class="text-left text-2xl font-semibold text-ODS-800 p-2">Installatie Android</h2>
                     <div class=" lg:flex space-x-4  text-ODS-900 text-lg ">
                         <p class="text-justify mx-2">
                             Er zijn enkele verschillende mogelijkheden om Over de Schelde te installeren op je smartphone. Voor Android telefoons is de meest eenvoudige manier via de Google play store. De applicatie kan je
-                            hier vinden: <a class="text-ODS-900 font-bold" target="_blank" href="https://play.google.com/store/apps/details?id=be.overdeschelde.twa">Over De Schelde</a>
-                            <br><br>
+                            hier vinden: <a class="text-ODS-900 font-bold" target="_blank" href="https://play.google.com/store/apps/details?id=be.overdeschelde.twa">Over De Schelde</a>.
+                            <br>
                             Je kan de applicatie ook via de website installeren. Als je de hoofdpagina van de website opent op een smartphone zal je browser automatisch vragen om de app te installeren. Door op deze prompt te klikken kan je de applicatie op je smartphone desktop installeren. 
                             Indien je deze prompt niet krijgt kan je ook via Share - Add to homescreen (IOS) of de drie bolletjes - Install app (Android) de installatie voltooien.
                             <br/>
-                            <br/>
+                        
                             Je kan er ook voor kiezen om een widget applicatie te installeren die
                             van een website een desktop widget kan maken. Widgetify is zo een applicatie voor android, en kan hier gedownloaded worden: <a href="https://play.google.com/store/apps/details?id=com.binarysmith.webclipwidget.ad">Widgetify</a>.
                         </p>                   

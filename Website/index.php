@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <?php include 'head.php';?>
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 overflow-scroll">
     <center>
     <div class=" py-2"></div>
         <div class="font-sans bg-white shadow-lg p-4 max-w-5xl px-5 py-5 rounded-lg">
