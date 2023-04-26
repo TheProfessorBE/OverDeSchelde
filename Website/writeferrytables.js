@@ -41,11 +41,11 @@ function writeFerryTables(modeOfWriting) {
     5
   );
 
-  function writeTable(nameDeparture, departures) {
+  function writeTable(nameDeparture, departures, colorStringEven, colorStringOdd, colorStringTitle ) {
     var currentTimeLocal = new Date();
     let currentTable = '<div class="flex flex-col text-center ">';
     currentTable +=
-      '<h2 class="bg-ODS-400 py-2 text-lg text-white font-bold rounded">' +
+      '<h2 class=" ' + colorStringTitle + ' py-2 text-lg text-white font-bold rounded">' +
       nameDeparture +
       "</h2><ul>";
     for (let i = 0; i < departures.length; i++) {
@@ -55,9 +55,9 @@ function writeFerryTables(modeOfWriting) {
       differenceInMinutes = Math.round( ( curDepartureTime - currentTimeLocal ) / 1000 / 60 );
       var colorString;
       if (i % 2 == 0) {
-        colorString = 'bg-ODS-100';
+        colorString = colorStringEven;
       } else {
-        colorString = 'bg-ODS-300';
+        colorString = colorStringOdd;
       }
       var showMinutes = false;
       if( (i < 8) && modeOfWriting == 0){
@@ -88,27 +88,39 @@ function writeFerryTables(modeOfWriting) {
     return currentTable;
   }
 
+  colorStringBHEven = 'bg-ODS-300';
+  colorStringBHOdd = 'bg-ODS-100';
+  colorStringBHTitle = 'bg-ODS-400';
+
+  colorStringKHEven = 'bg-ODS2-300';
+  colorStringKHOdd = 'bg-ODS2-100';
+  colorStringKHTitle = 'bg-ODS2-400';
+
+  colorStringSLEven = 'bg-ODS-300';
+  colorStringSLOdd = 'bg-ODS-100';
+  colorStringLSTitle = 'bg-ODS-400';
+
   if (modeOfWriting == 0) {
-    tableHtmlBazel = writeTable("Bazel", nextDeparturesBazel);
-    tableHtmlHemiksem = writeTable("Hemiksem", nextDeparturesHemiksem);
-    tableHtmlKruibeke = writeTable("Kruibeke", nextDeparturesKruibeke);
-    tableHtmlHoboken = writeTable("Hoboken", nextDeparturesHoboken);
-    tableHtmlLo = writeTable("Sint-Anna", nextDeparturesLo);
-    tableHtmlAntwerpen = writeTable("Antwerpen", nextDeparturesAntwerpen);
+    tableHtmlBazel = writeTable("Bazel", nextDeparturesBazel, colorStringBHEven, colorStringBHOdd, colorStringBHTitle );
+    tableHtmlHemiksem = writeTable("Hemiksem", nextDeparturesHemiksem, colorStringBHEven, colorStringBHOdd, colorStringBHTitle );
+    tableHtmlKruibeke = writeTable("Kruibeke", nextDeparturesKruibeke, colorStringKHEven, colorStringKHOdd, colorStringKHTitle );
+    tableHtmlHoboken = writeTable("Hoboken", nextDeparturesHoboken, colorStringKHEven, colorStringKHOdd, colorStringKHTitle );
+    tableHtmlLo = writeTable("Sint-Anna", nextDeparturesLo, colorStringSLEven, colorStringSLOdd, colorStringLSTitle );
+    tableHtmlAntwerpen = writeTable("Antwerpen", nextDeparturesAntwerpen, colorStringSLEven, colorStringSLOdd, colorStringLSTitle );
   } else if (modeOfWriting == 1) {
-    tableHtmlBazel = writeTable("Bazel", departuresBazelWeek);
-    tableHtmlHemiksem = writeTable("Hemiksem", departuresHemiksemWeek);
-    tableHtmlKruibeke = writeTable("Kruibeke", departuresKruibekeWeek);
-    tableHtmlHoboken = writeTable("Hoboken", departuresHobokenWeek);
-    tableHtmlLo = writeTable("Sint-Anna", departuresLoWeek);
-    tableHtmlAntwerpen = writeTable("Antwerpen", departuresAntwerpenWeek);
+    tableHtmlBazel = writeTable("Bazel", departuresBazelWeek, colorStringBHEven, colorStringBHOdd, colorStringBHTitle );
+    tableHtmlHemiksem = writeTable("Hemiksem", departuresHemiksemWeek, colorStringBHEven, colorStringBHOdd, colorStringBHTitle );
+    tableHtmlKruibeke = writeTable("Kruibeke", departuresKruibekeWeek, colorStringKHEven, colorStringKHOdd, colorStringKHTitle );
+    tableHtmlHoboken = writeTable("Hoboken", departuresHobokenWeek, colorStringKHEven, colorStringKHOdd, colorStringKHTitle );
+    tableHtmlLo = writeTable("Sint-Anna", departuresLoWeek, colorStringSLEven, colorStringSLOdd, colorStringLSTitle );
+    tableHtmlAntwerpen = writeTable("Antwerpen", departuresAntwerpenWeek, colorStringSLEven, colorStringSLOdd, colorStringLSTitle );
   } else if (modeOfWriting == 2) {
-    tableHtmlBazel = writeTable("Bazel", departuresBazelWeekend);
-    tableHtmlHemiksem = writeTable("Hemiksem", departuresHemiksemWeekend);
-    tableHtmlKruibeke = writeTable("Kruibeke", departuresKruibekeWeekend);
-    tableHtmlHoboken = writeTable("Hoboken", departuresHobokenWeekend);
-    tableHtmlLo = writeTable("Sint-Anna", departuresLoWeekend);
-    tableHtmlAntwerpen = writeTable("Antwerpen", departuresAntwerpenWeekend);
+    tableHtmlBazel = writeTable("Bazel", departuresBazelWeekend, colorStringBHEven, colorStringBHOdd, colorStringBHTitle );
+    tableHtmlHemiksem = writeTable("Hemiksem", departuresHemiksemWeekend, colorStringBHEven, colorStringBHOdd, colorStringBHTitle );
+    tableHtmlKruibeke = writeTable("Kruibeke", departuresKruibekeWeekend, colorStringKHEven, colorStringKHOdd, colorStringKHTitle );
+    tableHtmlHoboken = writeTable("Hoboken", departuresHobokenWeekend, colorStringKHEven, colorStringKHOdd, colorStringKHTitle );
+    tableHtmlLo = writeTable("Sint-Anna", departuresLoWeekend, colorStringSLEven, colorStringSLOdd, colorStringLSTitle );
+    tableHtmlAntwerpen = writeTable("Antwerpen", departuresAntwerpenWeekend, colorStringSLEven, colorStringSLOdd, colorStringLSTitle );
   }
 
   document.getElementById("next-departures-bazel").innerHTML = tableHtmlBazel;
