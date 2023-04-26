@@ -5,6 +5,7 @@
 <div class="grid  lg:grid-cols-2 gap-2 ">
 
     <div class="bg-ODS-100 rounded-lg p-2">
+        <div class=" py-1"></div>
         <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'B0B2KDGXB');kofiwidget2.draw();</script> 
         <div class=" py-1"></div>
         <div class="text-s text-ODS2-600 flex items-center justify-center space-x-6">
@@ -21,9 +22,9 @@
             <p>Meer informatie over het veer is te vinden op:</p>
             <div class=" py-0.5"></div>
             <div class="text-ODS-600 grid grid-cols-1 lg:grid-cols-3 gap-0.5 ">    
-                <a class=" font-semibold hover:text-ODS-800 hover:bg-ODS-400 px-2 py-3 rounded-lg" href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-bazel-hemiksem" target="new">AMDK - Hemiksem/Bazel</a>
-                <a class=" font-semibold hover:text-ODS-800 hover:bg-ODS-400 px-2 py-3 rounded-lg " href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-kruibeke-hoboken" target="new">AMDK - Hoboken/Kruibeke</a>
-                <a class="font-semibold hover:text-ODS-800 hover:bg-ODS-400 px-2 py-3 rounded-lg" href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-sint-anna" target="new">AMDK - Sint-Anna/Antwerpen</a>
+                <a class=" font-semibold hover:text-ODS-800 hover:bg-ODS-300 px-2 py-3 rounded-lg" href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-bazel-hemiksem" target="new">AMDK - Hemiksem/Bazel</a>
+                <a class=" font-semibold hover:text-ODS-800 hover:bg-ODS2-300 px-2 py-3 rounded-lg " href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-kruibeke-hoboken" target="new">AMDK - Hoboken/Kruibeke</a>
+                <a class="font-semibold hover:text-ODS-800 hover:bg-ODS-300 px-2 py-3 rounded-lg" href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-sint-anna" target="new">AMDK - Sint-Anna/Antwerpen</a>
             </div>
             <div class="text-left text-xs font-bold text-ODS-600" id="lastUpdateText"></div>
         </div>

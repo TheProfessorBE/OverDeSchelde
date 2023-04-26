@@ -906,6 +906,16 @@ video {
   background-color: rgb(124 141 180 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-ODS-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 184 221 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-ODS2-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 181 207 / var(--tw-bg-opacity));
+}
+
 .hover\:text-ODS-800:hover {
   --tw-text-opacity: 1;
   color: rgb(37 64 103 / var(--tw-text-opacity));
