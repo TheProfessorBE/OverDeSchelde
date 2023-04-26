@@ -18,8 +18,8 @@
 
 <div class=" py-2"></div>
 <div class="text-ODS-600 gap-0.5 font-bold">
-    <p>Meer informatie over het veer is te vinden op de website van het Agentschap voor Maritieme Dienstverlening en Kust:</p>
-    <div class=" py-2"></div>
+    <p>Meer informatie over het veer is te vinden op:</p>
+    <div class=" py-0.5"></div>
     <div class="text-ODS-600 grid grid-cols-1 lg:grid-cols-3 gap-0.5 ">    
         <a class=" font-semibold hover:text-ODS-800 hover:bg-ODS-400 px-2 py-3 rounded-lg" href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-bazel-hemiksem" target="new">AMDK - Hemiksem/Bazel</a>
         <a class=" font-semibold hover:text-ODS-800 hover:bg-ODS-400 px-2 py-3 rounded-lg " href="https://www.agentschapmdk.be/nl/veerdiensten/veerdienst-kruibeke-hoboken" target="new">AMDK - Hoboken/Kruibeke</a>
@@ -27,7 +27,7 @@
     </div>
 </div>
 
-<div class=" py-2"></div>
+<div class=" py-1"></div>
 <div class="text-xs text-ODS-400">
     <p>
     <b>Disclaimer:</b> This website is a hobby project by TheProfessorBE, not a professional website. The information provided on this website is for general informational purposes only. While we strive to 
