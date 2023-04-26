@@ -80,7 +80,7 @@ function writeFerryTables(modeOfWriting) {
       } else {
         differentTimeString = `${differenceInMinutes}min`;
       }
-        currentTable += " <span class=' px-2 text-xs " + colorStringMinutes + " font-bold align-middle'>(" + differentTimeString + ")</span>";
+        currentTable += " <span class=' px-2 text-xs " + colorStringMinutes + " font-semibold align-middle'>(" + differentTimeString + ")</span>";
       }
       currentTable +="</li>";
     }
