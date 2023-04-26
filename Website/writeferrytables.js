@@ -89,15 +89,15 @@ function writeFerryTables(modeOfWriting) {
   }
 
   colorStringBHEven = 'bg-ODS-300';
-  colorStringBHOdd = 'bg-ODS-100';
+  colorStringBHOdd = 'bg-ODS-200';
   colorStringBHTitle = 'bg-ODS-400';
 
   colorStringKHEven = 'bg-ODS2-300';
-  colorStringKHOdd = 'bg-ODS2-100';
+  colorStringKHOdd = 'bg-ODS2-200';
   colorStringKHTitle = 'bg-ODS2-400';
 
   colorStringSLEven = 'bg-ODS-300';
-  colorStringSLOdd = 'bg-ODS-100';
+  colorStringSLOdd = 'bg-ODS-200';
   colorStringLSTitle = 'bg-ODS-400';
 
   if (modeOfWriting == 0) {

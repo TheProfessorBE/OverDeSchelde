@@ -18,9 +18,9 @@
 ?>
 
 
-<div class=" py-4"></div>
+<div class=" py-1"></div>
 
-<div class="text-ODS-600 grid grid-cols-1 lg:grid-cols-3 gap-0.5 font-bold" >
+<div class="text-ODS-600 grid grid-cols-1 lg:grid-cols-3 gap-0.5 font-bold bg-ODS-100 rounded-lg p-2" >
     <div>
         <?php
             writeFerryStatus("Veer Hemiksem/Bazel", $lines[1] );
