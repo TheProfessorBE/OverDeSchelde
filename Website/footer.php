@@ -8,10 +8,10 @@
 
 
 <div class=" py-2"></div>
-<div class="text-s text-ODS-400 flex items-center justify-center space-x-6">
+<div class="text-s text-ODS2-600 flex items-center justify-center space-x-6">
     <p class="mr-2">
-        Designed by <a href="https://github.com/TheProfessorBE" target="_blank" class="text-ODS-400 font-bold">TheProfessorBE</a> for fun and utility.</br>
-        Geen reclame, maar een <a class="text-ODS-400 font-bold" target="_blank" href="https://ko-fi.com/theprofessorbe">donatie</a> om de kosten te dekken wordt zeker geäpprecieerd! 
+        Designed by <a href="https://github.com/TheProfessorBE" target="_blank" class="text-ODS2-600 font-bold">TheProfessorBE</a>.</br>
+        Eeen <a class="text-ODS2-600 font-bold" target="_blank" href="https://ko-fi.com/theprofessorbe">donatie</a> om de kosten te dekken wordt zeker geäpprecieerd! 
     </p>
     <!--<img class="rounded-full w-14 h-auto shadow-lg" src="images/cartoon_small.jpg"></img>-->
 </div>    
