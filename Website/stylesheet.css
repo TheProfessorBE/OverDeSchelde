@@ -647,17 +647,17 @@ video {
 
 .bg-ODS2-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(235 235 243 / var(--tw-bg-opacity));
+  background-color: rgb(235 237 243 / var(--tw-bg-opacity));
 }
 
 .bg-ODS2-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(170 172 207 / var(--tw-bg-opacity));
+  background-color: rgb(170 181 207 / var(--tw-bg-opacity));
 }
 
 .bg-ODS2-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(124 129 180 / var(--tw-bg-opacity));
+  background-color: rgb(124 141 180 / var(--tw-bg-opacity));
 }
 
 .bg-gray-100 {
