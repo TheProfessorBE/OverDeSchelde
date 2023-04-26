@@ -32,7 +32,7 @@
 </div>
 
 <div class=" py-1"></div>
-<div class="text-xs text-ODS-600 bg-ODS-100 rounded-lg p-2">
+<div class="text-xs text-ODS-600 bg-ODS-100 rounded-lg p-2 text-justify">
     <p>
     <b>Disclaimer:</b> This website is a hobby project by TheProfessorBE, not a professional website. The information provided on this website is for general informational purposes only. While we strive to 
     ensure that the information is up-to-date and accurate, we make no representations or warranties of any kind, express or 
