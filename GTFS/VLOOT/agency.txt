@@ -1,0 +1,2 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url,agency_email
+1,VLOOT,http://www.welkombijvloot.be,Europe/Brussels,nl,+3259566311,,

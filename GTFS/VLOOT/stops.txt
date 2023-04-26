@@ -1,0 +1,7 @@
+stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,wheelchair_boarding
+1,,Het Steen,,51.222192939111835,4.396827220916748,,,0,,Europe/Brussels,1
+2,,Linkeroever,,51.224356564156835,4.391816854476929,,,0,,Europe/Brussels,1
+3,,Bazel,,51.142565,4.325541,,,0,,Europe/Brussels,1
+4,,Hemiksem,,51.143171,4.331034,,,0,,Europe/Brussels,1
+5,,Kruibeke,,51.175926,4.324383,,,0,,Europe/Brussels,1
+6,,Hoboken,,51.175496,4.331914,,,0,,Europe/Brussels,1
