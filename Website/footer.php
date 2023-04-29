@@ -9,7 +9,7 @@
         <div class="text-s text-ODS2-600 flex items-center justify-center space-x-6">
             <p class="mr-2">
                 Designed by <a href="https://github.com/TheProfessorBE" target="_blank" class="text-ODS2-600 font-bold underline">TheProfessorBE</a>.</br>
-                <a class="text-ODS2-600 font-bold underline" target="_blank" href="https://ko-fi.com/theprofessorbe">Donaties</a> om de kosten te dekken worden zeker geäpprecieerd! 
+                <a class="text-ODS2-600 font-bold underline" target="_blank" href="https://ko-fi.com/theprofessorbe">Donaties</a> om de kosten te dekken kunnen via Ko-Fi: 
             </p>
         </div>   
         <div class=" py-1"></div>
