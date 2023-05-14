@@ -4,7 +4,7 @@
     <body class="bg-gray-100 overflow-scroll">
     <center>
     <div class=" py-2"></div>
-        <div class="font-sans bg-white shadow-lg p-4 max-w-5xl px-5 py-5 rounded-md">
+        <div class="font-sans bg-white shadow-lg p-4 max-w-6xl px-5 py-5 rounded-md">
             <div class="justify-center 	text-white ">
                 <?php include 'navbar.php';?>
 
