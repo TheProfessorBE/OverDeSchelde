@@ -32,14 +32,15 @@ function getNextDeparturesRW( dayOfWeek,departuresWeek,departuresWeekend,numberT
 
 
   const currentDate = new Date();
-  const currentMonthLocal = currentDate.getMonth();
-
+  //const currentMonthLocal = currentDate.getMonth();
+  const currentMonthLocal = 1;
   
   if (currentMonthLocal === 3 || currentMonthLocal === 4 || currentMonthLocal === 5 || currentMonthLocal === 8) {
     if (dayOfWeek === 0 || dayOfWeek === 6) {
       departures = departuresWeekend;
     } else {
       departures = [];
+      document.getElementById("statusRW").innerHTML = "Geen Veer Vandaag";
     }
   }else if( currentMonthLocal == 6 || currentMonthLocal == 7){
     if (dayOfWeek === 0 || dayOfWeek === 6) {
@@ -49,6 +50,10 @@ function getNextDeparturesRW( dayOfWeek,departuresWeek,departuresWeekend,numberT
     }
   }else{
     departures = [];
+    document.getElementById("statusRW").innerHTML = "Geen Veer Vandaag";
+
+
+    
   }
 
 

@@ -11,7 +11,7 @@
         }else if( strcmp($buffer,"veer vaart niet")==0 ){
             echo "<p class='status text-red-800 '>Veer vaart niet</p>";
         }else if( strcmp($buffer,"Geen Realtime Info")==0 ){
-            echo "<p class='status text-orange-400 '>Geen Realtime Info</p>";
+            echo "<p  id='statusRW' class='status text-orange-400 '>Geen Realtime Info</p>";
         }else{
             echo "<p class='status text-orange-400 '>Mogelijks storing!</p>";
         }
