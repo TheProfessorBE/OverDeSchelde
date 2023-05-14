@@ -846,6 +846,26 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
+}
+
+.text-ODS-400 {
+  --tw-text-opacity: 1;
+  color: rgb(102 146 202 / var(--tw-text-opacity));
+}
+
+.text-ODS2-400 {
+  --tw-text-opacity: 1;
+  color: rgb(124 141 180 / var(--tw-text-opacity));
+}
+
+.text-ODS2-800 {
+  --tw-text-opacity: 1;
+  color: rgb(51 61 89 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
