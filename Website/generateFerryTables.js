@@ -32,8 +32,8 @@ function getNextDeparturesRW( dayOfWeek,departuresWeek,departuresWeekend,numberT
 
 
   const currentDate = new Date();
-  //const currentMonthLocal = currentDate.getMonth();
-  const currentMonthLocal = 1;
+  const currentMonthLocal = currentDate.getMonth();
+  
   
   if (currentMonthLocal === 3 || currentMonthLocal === 4 || currentMonthLocal === 5 || currentMonthLocal === 8) {
     if (dayOfWeek === 0 || dayOfWeek === 6) {
