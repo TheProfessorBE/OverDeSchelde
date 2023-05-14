@@ -41,6 +41,20 @@ function writeFerryTables(modeOfWriting) {
     5
   );
 
+  var nextDeparturesRupelmonde = getNextDeparturesRW(
+    weekday,
+    departuresRupelmondeWeek,
+    departuresRupelmondeWeekend,
+    5
+  );
+
+  var nextDeparturesWintam = getNextDeparturesRW(
+    weekday,
+    departuresWintamWeek,
+    departuresWintamWeekend,
+    5
+  );
+  
   function writeTable(nameDeparture, departures, colorStringEven, colorStringOdd, colorStringTitle ) {
     var currentTimeLocal = new Date();
     let currentTable = '<div class="flex flex-col text-center ">';
@@ -100,6 +114,10 @@ function writeFerryTables(modeOfWriting) {
   colorStringSLOdd = 'bg-ODS-200';
   colorStringLSTitle = 'bg-ODS-400';
 
+  colorStringRWEven = 'bg-ODS2-300';
+  colorStringRWOdd = 'bg-ODS2-200';
+  colorStringRWTitle = 'bg-ODS2-400';
+
   if (modeOfWriting == 0) {
     tableHtmlBazel = writeTable("Bazel", nextDeparturesBazel, colorStringBHEven, colorStringBHOdd, colorStringBHTitle );
     tableHtmlHemiksem = writeTable("Hemiksem", nextDeparturesHemiksem, colorStringBHEven, colorStringBHOdd, colorStringBHTitle );
@@ -107,6 +125,8 @@ function writeFerryTables(modeOfWriting) {
     tableHtmlHoboken = writeTable("Hoboken", nextDeparturesHoboken, colorStringKHEven, colorStringKHOdd, colorStringKHTitle );
     tableHtmlLo = writeTable("Sint-Anna", nextDeparturesLo, colorStringSLEven, colorStringSLOdd, colorStringLSTitle );
     tableHtmlAntwerpen = writeTable("Antwerpen", nextDeparturesAntwerpen, colorStringSLEven, colorStringSLOdd, colorStringLSTitle );
+    tableHtmlRupelmonde = writeTable("Rupelmonde", nextDeparturesRupelmonde, colorStringRWEven, colorStringRWOdd, colorStringRWTitle );
+    tableHtmlWintam = writeTable("Wintam", nextDeparturesWintam, colorStringRWEven, colorStringRWOdd, colorStringRWTitle );
   } else if (modeOfWriting == 1) {
     tableHtmlBazel = writeTable("Bazel", departuresBazelWeek, colorStringBHEven, colorStringBHOdd, colorStringBHTitle );
     tableHtmlHemiksem = writeTable("Hemiksem", departuresHemiksemWeek, colorStringBHEven, colorStringBHOdd, colorStringBHTitle );
@@ -114,6 +134,8 @@ function writeFerryTables(modeOfWriting) {
     tableHtmlHoboken = writeTable("Hoboken", departuresHobokenWeek, colorStringKHEven, colorStringKHOdd, colorStringKHTitle );
     tableHtmlLo = writeTable("Sint-Anna", departuresLoWeek, colorStringSLEven, colorStringSLOdd, colorStringLSTitle );
     tableHtmlAntwerpen = writeTable("Antwerpen", departuresAntwerpenWeek, colorStringSLEven, colorStringSLOdd, colorStringLSTitle );
+    tableHtmlRupelmonde = writeTable("Rupelmonde", departuresRupelmondeWeek, colorStringRWEven, colorStringRWOdd, colorStringRWTitle );
+    tableHtmlWintam = writeTable("Wintam", departuresWintamWeek, colorStringRWEven, colorStringRWOdd, colorStringRWTitle );    
   } else if (modeOfWriting == 2) {
     tableHtmlBazel = writeTable("Bazel", departuresBazelWeekend, colorStringBHEven, colorStringBHOdd, colorStringBHTitle );
     tableHtmlHemiksem = writeTable("Hemiksem", departuresHemiksemWeekend, colorStringBHEven, colorStringBHOdd, colorStringBHTitle );
@@ -121,6 +143,8 @@ function writeFerryTables(modeOfWriting) {
     tableHtmlHoboken = writeTable("Hoboken", departuresHobokenWeekend, colorStringKHEven, colorStringKHOdd, colorStringKHTitle );
     tableHtmlLo = writeTable("Sint-Anna", departuresLoWeekend, colorStringSLEven, colorStringSLOdd, colorStringLSTitle );
     tableHtmlAntwerpen = writeTable("Antwerpen", departuresAntwerpenWeekend, colorStringSLEven, colorStringSLOdd, colorStringLSTitle );
+    tableHtmlRupelmonde = writeTable("Rupelmonde", departuresRupelmondeWeekend, colorStringRWEven, colorStringRWOdd, colorStringRWTitle );
+    tableHtmlWintam = writeTable("Wintam", departuresWintamWeekend, colorStringRWEven, colorStringRWOdd, colorStringRWTitle );    
   }
 
   document.getElementById("next-departures-bazel").innerHTML = tableHtmlBazel;
@@ -129,7 +153,8 @@ function writeFerryTables(modeOfWriting) {
   document.getElementById("next-departures-hoboken").innerHTML = tableHtmlHoboken;
   document.getElementById("next-departures-lo").innerHTML = tableHtmlLo;
   document.getElementById("next-departures-antwerpen").innerHTML = tableHtmlAntwerpen;
-
+  document.getElementById("next-departures-rupelmonde").innerHTML = tableHtmlRupelmonde;
+  document.getElementById("next-departures-wintam").innerHTML = tableHtmlWintam;
 
   var rightNow = new Date()
 
