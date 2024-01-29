@@ -33,6 +33,31 @@
     </div>
 </div>
 
+
+
+<div class=" py-1"></div>
+
+<div class=" py-1"></div>
+<div class="text-lg text-ODS-600 bg-ODS-100 rounded-lg p-2 text-center font-bold">
+    <p>Overdeschelde.be wordt mede mogelijk gemaakt door:</p>
+    
+    <div class="flex justify-center">
+        <div class="flex flex-col lg:flex-row justify-center items-center ">
+            <img src="images/logo.png" alt="Installation App" class="mb-2 lg:mb-0 lg:mr-2">
+            <img src="images/logo.png" alt="Installation App" class="mb-2 lg:mb-0 lg:mr-2">
+            <img src="images/logo.png" alt="Installation App" class="mb-2 lg:mb-0 lg:mr-2">
+            <img src="images/logo.png" alt="Installation App" class="mb-2 lg:mb-0 lg:mr-2">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+
 <div class=" py-1"></div>
 <div class="text-xs text-ODS-600 bg-ODS-100 rounded-lg p-2 text-center">
     <p>
@@ -45,4 +70,5 @@
     Contact us via <a href="mailto:info@overdeschelde.be" target="_blank" class="text-ODS2-600 font-bold underline">info@overdeschelde.be</a>.
     </p>
 </div>
+
 
