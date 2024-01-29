@@ -3,7 +3,7 @@
 
     <meta name="title" content="Over De Schelde">
     <meta name="description" content="Website to show the ferry times of the Schelde near Antwerp">
-    <meta name="keywords" content="Veer, Kruibeke, Hoboken, Antwerpen, Sint-Anna, Bazel, Hemiksem, veerboot, overzet, overzetboot, schelde, overzetten, ferry">
+    <meta name="keywords" content="Veer, Kruibeke, Hoboken, Antwerpen, Sint-Anna, Bazel, Hemiksem, veerboot, overzet, overzetboot, schelde, overzetten, ferry, uren overzetboot kruibeke,uren overzetboot Hoboken, uren overzetboot linkeroever, uren overzetboot kruibeke, ">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
@@ -24,7 +24,7 @@
         </script>
     <title>Over de Schelde: de vertrektijden van de veerboten over de Schelde.</title>
         
-    <link rel="stylesheet" href="stylesheet.css?rnd=3.1415271221">
+    <link rel="stylesheet" href="stylesheet.css?rnd=3.14152712212">
     <script src="generateFerryTables.js?rnd=3.14152712215"></script>
     <script src='writeferrytables.js?rnd=3.1415271221'></script>
     <script src='ferrydata.js?rnd=3.1415271221'></script>
