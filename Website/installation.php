@@ -48,7 +48,7 @@
                         Met deze applicaties streven we ernaar om het gebruiksgemak en de toegankelijkheid van onze diensten voor alle gebruikers, ongeacht hun apparaat, te verbeteren.
                     </p>
                 </div>
-
+                
            
 
                 <?php include 'footer.php';?>                
